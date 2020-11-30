@@ -1,0 +1,80 @@
+// SELECTEURS
+
+body {
+    max-width: @xxl;
+    width: 100%;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+}
+
+html {
+    max-width: @xxl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+// responsive font size trick
+h1,
+h2 {
+    font-size: 60px;
+    font-family: merriweather;
+    @media (max-width: @s) {
+        font-size: 9vw;
+    }
+}
+
+ul {
+    list-style: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    @supports (-ms-ime-align: auto) {
+        // add this to avoid weird bug on edge
+        margin-left: -40px;
+    }
+}
+
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    // add this to avoid bug on edge
+    margin-left: 0;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+progress {
+    // reset appearance
+    appearance: none;
+    // remove border by default in Firefox
+    border: none;
+}
+
+input {
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

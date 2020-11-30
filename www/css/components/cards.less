@@ -1,0 +1,71 @@
+// card
+
+.card-container {
+    &.-value {
+        max-width: 100%;
+        width: 420px;
+        margin: 2em;
+
+        > h3 {
+            &:after {
+                margin-top: 2em;
+                margin-right: auto;
+                margin-left: auto;
+                // separation line
+                width: 2em;
+                height: 1px;
+                content: "";
+                display: flex;
+                justify-content: center;
+                background: @brown;
+            }
+        }
+    }
+
+    &.-contact,
+    &.-team {
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        margin: 3.5em;
+
+        h4 {
+            text-transform: uppercase;
+        }
+
+        .title {
+            padding-bottom: 0;
+        }
+
+        > .link {
+            margin-top: 1em;
+        }
+    }
+
+    &.-contact {
+        margin: 3.5em 3.5em 0;
+
+        .title {
+            padding-bottom: 0;
+        }
+
+        .link {
+            display: none;
+        }
+
+        &:hover {
+            transition-duration: 1.5s;
+            transform: rotate(45deg);
+
+            .title {
+                display: none;
+            }
+
+            .link {
+                display: block;
+                transform: rotate(-45deg);
+                font-size: @font-xs;
+            }
+        }
+    }
+}
