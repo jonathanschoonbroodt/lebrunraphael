@@ -1,0 +1,115 @@
+// navbars
+
+.navbar {
+    font-weight: 700;
+    padding: 2em 4.5%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    max-width: 1980px;
+    margin: auto;
+    background: linear-gradient(to bottom, @black, @transparent);
+
+    &-brand {
+        .logo {
+            width: 75px;
+            display: flex;
+
+            &.-white {
+                display: none;
+            }
+        }
+    }
+
+    &-container {
+        display: flex;
+    }
+
+    &-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &-listelement {
+        @media (max-width: @m) {
+            display: none;
+        }
+
+        + .navbar-listelement {
+            margin-left: 2em;
+        }
+    }
+
+    &-burger {
+        @media (min-width: @m + 1px) {
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .burgerbutton {
+            &.-closenavbar {
+                display: none;
+            }
+        }
+    }
+
+    .smnavbar-container {
+        display: none;
+    }
+
+    &.-opensmmenu {
+        @media (max-width: @m) {
+            position: fixed;
+            z-index: 999;
+            overflow: scroll;
+            width: 100vw;
+            height: 100vh;
+            background: @black;
+
+            .navbar {
+                &-brand {
+                    width: 100%;
+
+                    .logo {
+                        display: flex;
+                    }
+                }
+
+                &-list {
+                    display: none;
+                }
+
+                &-burger {
+                    .burgerbutton {
+                        &.-closenavbar {
+                            display: flex;
+                        }
+
+                        &.-opennavbar {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .smnavbar-container {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                width: 100%;
+
+                .button,
+                .link {
+                    line-height: 1.5em;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
