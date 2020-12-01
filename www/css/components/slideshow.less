@@ -1,0 +1,30 @@
+// https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp
+
+.slideshow-container {
+    position: relative;
+
+    .slide {
+        display: none;
+    }
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: @white;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color .5s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: @blue;
+    }
+}

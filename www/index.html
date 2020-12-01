@@ -4,6 +4,8 @@
     <head>
         <title>Lebrun Raphaël SRL - Bureau d'avocats spécialisé en immobilier à Clermont en Belgique</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <meta name="description" content="Spécialisé dans l'immobilier et ses matières connexes. Adaptation de statuts, construction, contrats de bails etc. Notre bureau d'avocat est à votre disposition.">
         <meta name="keywords" content="avocat, immobilier, status, bails, construction, clermont, thimister, thimister-clermont, belgique">
         <meta name="author" content="Lebrun Raphaël SRL">
@@ -14,6 +16,9 @@
     </head>
 
     <body>
+        <nav class="tothetop _color -bgwhite _flex -center -h -v">
+            <a class="_color -black" href="#" title="Retourner en haut de la page">&uarr;</a>
+        </nav>
         <header>
             <nav class="navbar" id="menu">
                 <div class="navbar-container _flex -spacebetween  _margin -auto">
@@ -23,147 +28,221 @@
                     </h1>
                     <ul class="navbar-list _flex -end">
                         <li class="navbar-listelement">
-                            <a class="link -white" href="index.html" title="Afficher la page Présentation">Présentation</a>
+                            <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                            <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
+                            <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux pros</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts">Copropriete & adaptation de statuts</a>
+                            <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts">Copropriete & adaptation de statuts</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
+                            <a class="link -black" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
+                            <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
                         </li>
                         <li class="navbar-listelement">
-                            <a class="link -white" href="contact.html" title="Afficher la page Contact">Contact</a>
+                            <a class="link -black" href="contact.html" title="Afficher la page Contact">Contact</a>
                         </li>
                     </ul>
                     <div class="navbar-burger">
-                        <a href="#" class="burgerbutton-container" title="Fermer le menu">
-                            <img class="burgerbutton -opennavbar" src="img/menu/burgeropen.svg" alt="Icône d'ouverture du menu" onclick="openMenu()">
-                            <img class="burgerbutton -closenavbar" src="img/menu/burgerclose.svg" alt="Icône de fermeture du menu" onclick="closeMenu()">
+                        <a href="#" class="burgerbutton-container">
+                            <img class="burgerbutton -opennavbar" src="img/icons/burgeropen.svg" alt="Icône d'ouverture du menu" title="Ouvrir le menu" onclick="openMenu()">
+                            <img class="burgerbutton -closenavbar" src="img/icons/burgerclose.svg" alt="Icône de fermeture du menu" title="Fermer le menu" onclick="closeMenu()">
                         </a>
                     </div>
                 </div>
                 <div class="smnavbar-container">
                     <ul class="smnavbar-list">
                         <li class="navbar-listelement">
-                            <a class="link -white" href="index.html" title="Afficher la page Présentation" onclick="closeMenuAfterClickToLink()">Présentation</a>
+                            <a class="link -black" href="index.html" title="Afficher la page Présentation" onclick="closeMenuAfterClickToLink()">Présentation</a>
                         </li>
                         <li>
-                            <a class="link -white" href="contracts.html" title="Afficher la page Modèles de contrats" onclick="closeMenuAfterClickToLink()">Modèles de contrats</a>
+                            <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats" onclick="closeMenuAfterClickToLink()">Modèles de contrats</a>
                         </li>
                         <li>
-                            <a class="link -white" href="services.html" title="Afficher la page Services aux professionnels" onclick="closeMenuAfterClickToLink()">Services aux professionnels</a>
+                            <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels" onclick="closeMenuAfterClickToLink()">Services aux professionnels</a>
                         </li>
                         <li>
-                            <a class="link -white" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts" onclick="closeMenuAfterClickToLink()">Copropriete & adaptation de statuts</a>
+                            <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts" onclick="closeMenuAfterClickToLink()">Copropriete & adaptation de statuts</a>
                         </li>
                         <li>
-                            <a class="link -white" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales" onclick="closeMenuAfterClickToLink()">Tarifs & infos légales</a>
+                            <a class="link -black" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales" onclick="closeMenuAfterClickToLink()">Tarifs & infos légales</a>
                         </li>
                         <li>
-                            <a class="link -white" href="team.html" title="Afficher la page Mon équipe" onclick="closeMenuAfterClickToLink()">Mon équipe</a>
+                            <a class="link -black" href="team.html" title="Afficher la page Mon équipe" onclick="closeMenuAfterClickToLink()">Mon équipe</a>
                         </li>
                         <li>
-                            <a class="link -white" href="contact.html" title="Afficher la page Contact" onclick="closeMenuAfterClickToLink()">Contact</a>
+                            <a class="link -black" href="contact.html" title="Afficher la page Contact" onclick="closeMenuAfterClickToLink()">Contact</a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="hero-container _flex -center -h -v">
-                <h1>Lebrun Raphaël SRL | Bureau d'avocats</h1>
+            <div class="hero-container _flex -column -center -h -v">
+                <h1 class="_text -center">Lebrun Raphaël SRL</h1>
+                <h2 class="_text -center">Bureau d'avocats</h2>
             </div>
         </header>
-        <!-- <main class="content-container -index">
-            <h2>Les spécificités de notre travail </h2>
-            <div class="_flex -wrap">
-                <div class="card-container">
-                    <h3>Nous sommes experts en droit immobilier</h3>
-                    <p>
-                        Notre cabinet pratique essentiellement le droit immobilier au sens large : construction, bail, copropriété, contrats, responsabilité, urbanisme... Fort d'une solide expérience dans le domaine, nous sommes aptes à vous
-                        conseiller de façon précise et rigoureuse.
-                    </p>
+        <main class="index">
+            <section>
+                <h3 class="title">Notre philosophie <span class="_hide -always">de notre bureau d'avocats</span></h3>
+                <p>Depuis notre création en 2011, nous proposons des services liés au droit immobilier au sens large : construction, bail, copropriété, contrats, responsabilité, urbanisme...</p>
+                <p>Notre approche est de traiter les problèmes à la source, et ce via une méthode intégrée chez nos clients. Nous traitons les dossiers conflictuels dés l'apparition du problème, ce qui facilite une résolution rapide et peu coûteuse.
+                    Nous effectuons également une vérification globales des contrats, assurances, modèles-types et conditions générales.</p>
+                <p>Cette méthode nous permet d'être un réel rouage de l'entrepreneur, au même titre que le commercial ou le service après-vente, et nous distillons au quotidien des conseils à tous les niveaux et à tous les domaines.</p>
+                <p>Notre clientèle est principalement professionnelle : entrepreneurs, promoteurs et industriels. Cependant, nous acceptons également de défendre les particuliers dans nos domaines de compétences.</p>
+            </section>
+            <section>
+                <h3 class="title">Nos spécificités <span class="_hide -always">de notre bureau d'avocats</span></h3>
+                <div class="_flex -wrap -spacebetween">
+                    <div class="card-container">
+                        <h4>Nous sommes experts en droit immobilier</h4>
+                        <p>
+                            Notre cabinet pratique essentiellement le droit immobilier au sens large : construction, bail, copropriété, contrats, responsabilité, urbanisme... Fort d'une solide expérience dans le domaine, nous sommes aptes à vous
+                            conseiller de façon précise et rigoureuse.
+                        </p>
+                    </div>
+                    <div class="card-container">
+                        <h4>Nous traitons les problèmes à la source</h4>
+                        <p>
+                            Nous effectuons une vérification de vos contrats, assurances, modèles-types, conditions générales et autres documents juridiques afin d'en repérer les faiblesses. Nous mettons ensuite en oeuvre les processus permettant de
+                            vous assurer une pleine sécurité juridique.
+                        </p>
+                    </div>
+                    <div class="card-container">
+                        <h4>Nous atteignons nos objectifs</h4>
+                        <p>
+                            Et ça fonctionne : le taux de résolution des litiges en est fortement amélioré et le nombre de dossiers contentieux diminue sérieusement. Nous pouvons également former votre personnel en interne afin de vous permettre de
+                            réduire vos frais juridiques en amont.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-container">
-                    <h3>Nous traitons les problèmes à la source</h3>
+            </section>
+        </main>
+        <h3 class="title _text -center">Une brique dans le ventre ?</h3>
+        <div class="tips-container _flex -column -center -h -v _text -center">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width slides/quotes -->
+                <div class="slide">
+                    <h4>Réception Provisoire</h4>
                     <p>
-                        Nous effectuons une vérification de vos contrats, assurances, modèles-types, conditions générales et autres documents juridiques afin d'en repérer les faiblesses. Nous mettons ensuite en oeuvre les processus permettant de
-                        vous assurer une pleine sécurité juridique.
-                    </p>
+                        La réception provisoire ne consiste pas seulement à lister les travaux à terminer et malfaçons à corriger.
+                        La réception provisoire, dans la plupart des cas, emporte l'agréation des travaux ce qui signifie que tous les vices apparents lors de la réception provisoire et qui ne sont pas mentionnés au PV de réception provisoire sont
+                        considérés comme acceptés par le client, c'est-à-dire vous.
+                    <p>
                 </div>
-                <div class="card-container">
-                    <h3>Nous atteignons nos objectifs</h3>
+                <div class="slide">
+                    <h4>Conditions Générales</h4>
                     <p>
-                        Et ça fonctionne : le taux de résolution des litiges en est fortement amélioré et le nombre de dossiers contentieux diminue sérieusement. Nous pouvons également former votre personnel en interne afin de vous permettre de
-                        réduire vos frais juridiques en amont.
-                    </p>
+                        Un commerçant peut-il toujours vous imposer ses conditions générales pour vous imputer des frais de retard ou des intérêts élevés en cas de paiement tardif ? Non, il ne peut le faire que s'il prouve que vous avez eu
+                        connaissance de ces conditions générales avant de contracter avec lui (si vous êtes consommateur).
+                    <p>
+                </div>
+                <div class="slide">
+                    <h4>Le contre-expert</h4>
+                    <p>
+                        Vous subissez un sinistre incendie et votre compagnie d'assurances mandate un expert pour venir estimer les dégâts. Sachez que la plupart des contrats d'assurances incendie prévoient la possibilité pour l'assuré de faire appel
+                        à un contre-expert (pour le défendre contre l'expert de l'assurance), et ce, aux frais de la compagnie (avec des limites cependant mais qui permettent souvent de faire face à la totalité des frais).
+                    <p>
                 </div>
             </div>
-            <a class="button" target="_blank" href="moreinformations.html">En savoir plus</button>
-        </main>
-        <footer class="footer">
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <footer class="footer _color -bggray _margin -auto">
             <h2 class="_hide -always">Pied de page</h2>
             <div class="footer-container _flex -wrap -spacebetween _margin -auto">
-                <div class="col-container -about _color -white">
-                    <h3 class="_hide -always">A propos de Lebrun Raphaël SRL</h3>
-                    <img class="logo" src="img/logo.svg" alt="Logo de Lebrun Raphaël SRL">
+                <div class="col-container -about">
+                    <h3 class="title -sub">A propos</h3>
                     <p class="about">
-                        Lebrun Raphaël SRL est un bureau d'avocat spécialisé en droit immobilier actif depuis 2011, situé à Clermont en Belgique.
+                        Lebrun Raphaël SRL est un bureau d'avocat spécialisé en droit immobilier actif depuis 2011 situé à Clermont en Belgique.
                     </p>
                 </div>
-                <div class="col-container -plan  _color -white">
-                    <h3 class="title">Plan du Site</h3>
+                <div class="col-container">
+                    <h3 class="title -sub">Plan du Site</h3>
                     <nav>
                         <ul class="footer-list">
                             <li class="footer-listelement">
-                                <a class="link -white" href="index.html" title="Afficher la page Présentation">Présentation</a>
+                                <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
                             </li>
                             <li>
-                                <a class="link -white" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
                             </li>
                             <li>
-                                <a class="link -white" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
+                                <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
                             </li>
                             <li>
-                                <a class="link -white" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts">Copropriete & adaptation de statuts</a>
+                                <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Copropriete & adaptation de statuts">Copropriete & adaptation de statuts</a>
                             </li>
                             <li>
-                                <a class="link -white" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
+                                <a class="link -black" href="feeandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
                             </li>
                             <li>
-                                <a class="link -white" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
+                                <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
                             </li>
                             <li>
-                                <a class="link -white" href="contact.html" title="Afficher la page Contact">Contact</a>
+                                <a class="link -black" href="contact.html" title="Afficher la page Contact">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="copyright-container _color -bgdarkestgreen -white">
-                <div class="content-container _flex -spacebetween -wrap -center -v">
-                    <div class="content-subcontainer _flex -center -h -v">
-                        Lebrun Raphaël SRL &copy;
-                    </div>
-                    <div class="content-subcontainer _flex -center -h -v">
-                        <div class="icons-container _flex">
-                            <div class="icon-container">
-                                <a href="https://facebook.com/SprlLebrunRaphael/" title="Accéder à la page Facebook de Lebrun Raphaël SRL">
-                                    <img class="icon" src="img/icons//facebook.svg" alt="Icône Facebook">
-                                </a>
-                            </div>
+            <div class="copyright-container _flex -spacebetween _color -bgblack -white">
+                <div class="infos-container">
+                    Lebrun Raphaël SRL &copy; - TVA 0833.868.418 - <a class="link -white" href="#" title="Afficher les crédits">Crédits</a> - By Jonathan Schoonbroodt (schoonbroodtjonathan@gmail.com)
+                </div>
+                <div class="socials-container _flex -center -h -v">
+                    <div class="icons-container _flex">
+                        <div class="icon-container">
+                            <a href="https://facebook.com/SprlLebrunRaphael/" title="Accéder à la page Facebook de Lebrun Raphaël SRL">
+                                <img class="icon -m" src="img/icons//facebook.svg" alt="Icône Facebook">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+    </script>
 
 </html>

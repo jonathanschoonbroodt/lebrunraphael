@@ -9,21 +9,12 @@
     width: 100%;
     max-width: 1980px;
     margin: auto;
-    background: linear-gradient(to bottom, @black, @transparent);
+    background: linear-gradient(to bottom, @white, @whitetransparent, @transparent);
 
     &-brand {
         .logo {
-            width: 75px;
-            display: flex;
-
-            &.-white {
-                display: none;
-            }
+            width: 50px;
         }
-    }
-
-    &-container {
-        display: flex;
     }
 
     &-list {
@@ -39,7 +30,11 @@
         }
 
         + .navbar-listelement {
-            margin-left: 2em;
+            margin-left: .5em;
+        }
+
+        .link {
+            font-size: @font-xs;
         }
     }
 
@@ -69,7 +64,7 @@
             overflow: scroll;
             width: 100vw;
             height: 100vh;
-            background: @black;
+            background: @white;
 
             .navbar {
                 &-brand {
