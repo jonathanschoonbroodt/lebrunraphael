@@ -257,11 +257,16 @@ section {
 .link:hover {
   text-decoration: underline;
 }
+.link.-looklikebutton {
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 0.5em;
+  border-radius: 18px;
+}
 .title {
   margin-bottom: 2em;
 }
 .title:before {
-  color: hsl(205, 51%, 32%);
+  color: hsl(206, 73%, 42%);
   content: "⚊";
   margin-right: 0.5em;
 }
@@ -277,6 +282,25 @@ section {
   .card-container {
     max-width: 100%;
   }
+}
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-container:hover .dropdown-content {
+  display: flex;
+  flex-flow: column;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1em;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: max-content;
+  z-index: 1;
+}
+.dropdown-content .link + .link {
+  margin-top: 0.5em;
 }
 .hero-container {
   background: url("../img/backgrounds/header.png") no-repeat, center, top;
@@ -307,13 +331,17 @@ section {
 }
 .dot-container .active,
 .dot-container .dot:hover {
-  background-color: hsl(205, 51%, 32%);
+  background-color: hsl(206, 73%, 42%);
 }
 .footer {
   max-width: 1024px;
 }
 .footer-container {
   margin-bottom: 1em;
+}
+.footer-listelement ul {
+  margin-left: 0.5em;
+  font-size: 0.75em;
 }
 .footer .col-container {
   padding: 1em;
@@ -351,15 +379,12 @@ section {
   justify-content: flex-end;
 }
 @media (max-width: 960px) {
-  .navbar-listelement {
-    display: none;
+  .navbar-list {
+    display: none!important;
   }
 }
 .navbar-listelement + .navbar-listelement {
   margin-left: 0.5em;
-}
-.navbar-listelement .link {
-  font-size: 0.75em;
 }
 .navbar-burger {
   display: flex;
@@ -407,7 +432,9 @@ section {
     justify-content: center;
     width: 100%;
   }
-  .navbar.-opensmmenu .smnavbar-container .button,
+  .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement.-contact {
+    margin-top: 2em;
+  }
   .navbar.-opensmmenu .smnavbar-container .link {
     line-height: 1.5em;
     font-size: 1.5em;
@@ -573,10 +600,10 @@ section {
   background-color: transparent;
 }
 ._color.-blue {
-  color: hsl(205, 51%, 32%);
+  color: hsl(206, 73%, 42%);
 }
 ._color.-bgblue {
-  background-color: hsl(205, 51%, 32%);
+  background-color: hsl(206, 73%, 42%);
 }
 ._margin.-auto {
   margin-left: auto;

@@ -1,0 +1,28 @@
+// https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+.dropdown {
+    &-container {
+        position: relative;
+        display: inline-block;
+
+        &:hover {
+            .dropdown-content {
+                display: flex;
+                flex-flow: column;
+                background-color: @white;
+                padding: 1em;
+            }
+        }
+    }
+
+    &-content {
+        display: none;
+        position: absolute;
+        min-width: max-content;
+        z-index: 1;
+
+        .link + .link {
+            margin-top: .5em;
+        }
+    }
+}
