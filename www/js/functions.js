@@ -8,8 +8,3 @@ function closeMenu() {
     var element = document.getElementById("menu");
     element.classList.remove("-opensmmenu");
 }
-
-function closeMenuAfterClickToLink() {
-    var element = document.getElementById("menu");
-    element.classList.remove("-opensmmenu");
-}
