@@ -384,7 +384,7 @@ section {
   }
 }
 .navbar-listelement + .navbar-listelement {
-  margin-left: 0.5em;
+  margin-left: 2em;
 }
 .navbar-burger {
   display: flex;
