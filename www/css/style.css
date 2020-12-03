@@ -224,6 +224,7 @@ p {
 .icon {
   width: 1.5em;
   height: 1.5em;
+  margin-bottom: 1em;
 }
 .icon.-xs {
   width: 0.375em;
@@ -439,9 +440,13 @@ p {
     justify-content: center;
     width: 100%;
   }
+  .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement ul {
+    margin-left: 1em;
+  }
   .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement.-contact {
     margin-top: 2em;
   }
+  .navbar.-opensmmenu .smnavbar-container .looklikelink,
   .navbar.-opensmmenu .smnavbar-container .link {
     line-height: 1.5em;
     font-size: 1.5em;
@@ -456,6 +461,9 @@ p {
   width: 100%;
   height: 50%;
   position: relative;
+}
+.tips-container .tips {
+  height: 100px;
 }
 .index {
   padding: 0 2em;
