@@ -1,5 +1,7 @@
 .footer {
-    max-width: @l;
+    &-wrapper {
+        max-width: @l;
+    }
 
     &-container {
         margin-bottom: 1em;
@@ -24,11 +26,19 @@
         }
     }
 
-    .copyright-container {
-        padding: 2em;
+    .copyright {
+        &-container {
+            .infos-container {
+                font-size: @font-xs;
+                @media (max-width: @s) {
+                    font-size: 2vw;
+                }
+            }
+        }
 
-        .infos-container {
-            font-size: @font-xs;
+        &-wrapper {
+            padding: 2em;
+            max-width: @l;
         }
     }
 }
