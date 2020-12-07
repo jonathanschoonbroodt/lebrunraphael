@@ -266,6 +266,11 @@ p {
   padding: 0.5em;
   border-radius: 18px;
 }
+.link.-looklikebutton:hover {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
 .title {
   margin-bottom: 2em;
 }
