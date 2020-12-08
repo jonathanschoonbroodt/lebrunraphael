@@ -272,7 +272,7 @@ p {
   color: hsl(0, 0%, 100%);
 }
 .title {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 .title:before {
   color: hsl(206, 73%, 42%);
@@ -346,9 +346,15 @@ p {
 .footer-container {
   margin-bottom: 1em;
 }
+.footer-listelement {
+  margin-bottom: 0.5em;
+}
 .footer-listelement ul {
   margin-left: 0.5em;
   font-size: 0.75em;
+}
+.footer-listelement ul > li {
+  margin-bottom: 0.25em;
 }
 .footer .col-container {
   padding: 1em;
@@ -448,9 +454,6 @@ p {
   .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement ul {
     margin-left: 1em;
   }
-  .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement.-contact {
-    margin-top: 2em;
-  }
   .navbar.-opensmmenu .smnavbar-container .looklikelink,
   .navbar.-opensmmenu .smnavbar-container .link {
     line-height: 1.5em;
@@ -468,7 +471,8 @@ p {
   position: relative;
 }
 .tips-container .tips {
-  height: 100px;
+  height: auto;
+  min-height: 100px;
 }
 .index {
   padding: 0 2em;
