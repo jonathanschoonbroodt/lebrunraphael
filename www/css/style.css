@@ -154,13 +154,11 @@ template {
 body {
   max-width: 1980px;
   width: 100%;
-  margin: auto;
   font-family: 'Montserrat', sans-serif;
 }
 html {
   max-width: 1980px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -213,10 +211,6 @@ progress {
 }
 input:disabled {
   cursor: not-allowed;
-}
-section {
-  margin: 5em auto;
-  max-width: 1024px;
 }
 p {
   line-height: 1.5;
@@ -282,7 +276,7 @@ p {
 .card-container {
   max-width: 33.33%;
   width: 100%;
-  padding: 2em;
+  padding: 1em;
 }
 @media (max-width: 960px) {
   .card-container {
@@ -314,6 +308,7 @@ p {
   width: 100%;
   height: 660px;
   position: relative;
+  padding: 1em;
 }
 .slideshow-container {
   position: relative;
@@ -331,7 +326,7 @@ p {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 0%);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
@@ -463,6 +458,7 @@ p {
 }
 .tips-container {
   padding: 5%;
+  padding-top: 0;
   margin: auto;
   background: url("../img/backgrounds/wall.png") no-repeat, center, top;
   background-size: cover;
@@ -473,6 +469,13 @@ p {
 .tips-container .tips {
   height: auto;
   min-height: 100px;
+}
+.section-container {
+  margin: 5em auto;
+  max-width: 1024px;
+}
+.section-container.-firstsection {
+  margin-top: 0;
 }
 .index {
   padding: 0 2em;
