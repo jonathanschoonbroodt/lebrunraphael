@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -28,9 +32,24 @@ h1 {
     font-size: @font-xl;
 }
 
-h2,
-h3 {
+h2 {
     font-size: @font-l;
+}
+
+h3 {
+    font-size: calc(@font-l - 5px);
+}
+
+h4 {
+    font-size: calc(@font-l - 7.5px);
+}
+
+h5 {
+    font-size: calc(@font-l - 10px);
+}
+
+h6 {
+    font-size: calc(@font-l - 12.5px);
 }
 
 ul {

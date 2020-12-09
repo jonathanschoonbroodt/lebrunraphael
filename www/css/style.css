@@ -163,6 +163,9 @@ html {
 a {
   text-decoration: none;
 }
+address {
+  font-style: normal;
+}
 h1,
 h2,
 h3,
@@ -176,9 +179,20 @@ h6 {
 h1 {
   font-size: 3em;
 }
-h2,
-h3 {
+h2 {
   font-size: 2em;
+}
+h3 {
+  font-size: calc(2em - 5px);
+}
+h4 {
+  font-size: calc(2em - 7.5px);
+}
+h5 {
+  font-size: calc(2em - 10px);
+}
+h6 {
+  font-size: calc(2em - 12.5px);
 }
 ul {
   list-style: none;
@@ -215,6 +229,10 @@ input:disabled {
 p {
   line-height: 1.5;
 }
+.googlemap {
+  border: 0;
+  margin-top: 1em;
+}
 .icon {
   width: 1.5em;
   height: 1.5em;
@@ -245,6 +263,12 @@ p {
 .link.-black:hover {
   color: hsl(0, 0%, 0%);
 }
+.link.-blue {
+  color: hsl(206, 73%, 42%);
+}
+.link.-blue:hover {
+  color: hsl(206, 73%, 42%);
+}
 .link.-white {
   color: hsl(0, 0%, 100%);
 }
@@ -271,6 +295,10 @@ p {
   color: hsl(206, 73%, 42%);
   content: "⚊";
   margin-right: 0.5em;
+}
+.subtitle {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 .card-container {
   max-width: 33.33%;
@@ -484,8 +512,18 @@ p {
 .section-container.-firstsection {
   margin-top: 0;
 }
-.index {
+.main-container {
   padding: 0 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-container.-contact,
+.main-container.-feesandlegalinformations {
+  padding-top: 10em;
+}
+.main-container.-feesandlegalinformations ul {
+  list-style-type: square;
+  margin-left: 2em;
 }
 ._hide.-always {
   display: none;
