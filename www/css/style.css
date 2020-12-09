@@ -218,7 +218,6 @@ p {
 .icon {
   width: 1.5em;
   height: 1.5em;
-  margin-bottom: 1em;
 }
 .icon.-xs {
   width: 0.375em;
@@ -282,6 +281,9 @@ p {
   .card-container {
     max-width: 100%;
   }
+}
+.card-container .icon {
+  margin-bottom: 1em;
 }
 .dropdown-container {
   position: relative;
@@ -363,11 +365,13 @@ p {
 .footer .copyright-container .madewithlove {
   margin-bottom: 0;
 }
-.footer .copyright-container .infos-container {
+.footer .copyright-container .infos-container,
+.footer .copyright-container .madewithlove {
   font-size: 0.75em;
 }
 @media (max-width: 640px) {
-  .footer .copyright-container .infos-container {
+  .footer .copyright-container .infos-container,
+  .footer .copyright-container .madewithlove {
     font-size: 2vw;
   }
 }
