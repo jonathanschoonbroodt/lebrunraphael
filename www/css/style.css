@@ -365,6 +365,22 @@ p {
 .dot-container .dot:hover {
   background-color: hsl(206, 73%, 42%);
 }
+.tothetop {
+  width: 25px;
+  height: 25px;
+  z-index: 998;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+.tothetop:hover {
+  opacity: 1;
+  transition-duration: 2s;
+}
+.tothetop > a {
+  font-size: 2em;
+}
 .footer-wrapper {
   max-width: 1024px;
 }
@@ -514,8 +530,6 @@ p {
 }
 .main-container {
   padding: 0 2em;
-  margin-left: auto;
-  margin-right: auto;
 }
 .main-container.-contact,
 .main-container.-feesandlegalinformations {
