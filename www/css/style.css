@@ -360,6 +360,9 @@ p {
 .footer .col-container .logo {
   width: 50px;
 }
+.footer .copyright-container .madewithlove {
+  margin-bottom: 0;
+}
 .footer .copyright-container .infos-container {
   font-size: 0.75em;
 }
@@ -369,7 +372,7 @@ p {
   }
 }
 .footer .copyright-wrapper {
-  padding: 2em;
+  padding: 2em 2em 0em 2em;
   max-width: 1024px;
 }
 .navbar {
