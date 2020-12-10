@@ -531,6 +531,9 @@ p {
 .main-container {
   padding: 0 2em;
 }
+.main-container.-contact .icon {
+  margin-right: 0.5em;
+}
 .main-container.-contact,
 .main-container.-feesandlegalinformations {
   padding-top: 10em;
