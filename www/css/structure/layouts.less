@@ -1,6 +1,21 @@
 .main-container {
     padding: 0 2em;
 
+    &.-services {
+        ol {
+            margin-block-start: 0;
+
+            > li {
+                margin-top: 1em;
+            }
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 1em;
+        }
+    }
+
     &.-team {
         .teammember-container {
             + .teammember-container::before {
@@ -26,6 +41,7 @@
 
     &.-contact,
     &.-feesandlegalinformations,
+    &.-services,
     &.-team {
         padding-top: 10em;
     }
