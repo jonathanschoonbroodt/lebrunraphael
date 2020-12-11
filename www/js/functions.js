@@ -1,10 +1,20 @@
 // open and close smartphone menu
 function openMenu() {
-    var element = document.getElementById("menu");
-    element.classList.add("-opensmmenu");
+    var openmenu = document.getElementById("menu");
+    openmenu.classList.add("-opensmmenu");
 }
 
 function closeMenu() {
-    var element = document.getElementById("menu");
-    element.classList.remove("-opensmmenu");
+    var openmenu = document.getElementById("menu");
+    openmenu.classList.remove("-opensmmenu");
+}
+
+function showMoreInformationsAboutStatusAdaptation() {
+  document.getElementById("showmore").classList.toggle("-show");
+  var showbutton = document.getElementById("showbutton");
+      if (showbutton.innerHTML !== "Réduire") {
+          showbutton.innerHTML = "Réduire";
+      } else {
+          showbuttona.innerHTML = "Plus d'infos";
+      }
 }

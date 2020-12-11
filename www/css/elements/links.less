@@ -1,4 +1,8 @@
 .link {
+    &:hover {
+        text-decoration: underline;
+    }
+
     &.-black {
         color: @black;
 
@@ -23,22 +27,6 @@
         color: @white;
 
         &:hover {
-            color: @white;
-        }
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &.-looklikebutton {
-        border: 1px solid @black;
-        padding: .5em;
-        border-radius: 18px;
-
-        &:hover {
-            text-decoration: none;
-            background-color: @black;
             color: @white;
         }
     }

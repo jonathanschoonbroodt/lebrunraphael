@@ -1,0 +1,29 @@
+.button {
+    max-width: 200px;
+    width: 100%;
+    padding: .5em;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 18px;
+
+    &.-blue {
+        color: @blue;
+        border-color: @blue;
+
+        &:hover {
+            color: @darkblue;
+            border-color: @darkblue;
+        }
+    }
+
+    &.-black {
+        color: @black;
+        border-color: @black;
+
+        &:hover {
+            color: @white;
+            border-color: @white;
+            background-color: @black;
+        }
+    }
+}
