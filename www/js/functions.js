@@ -15,6 +15,6 @@ function showMoreInformationsAboutStatusAdaptation() {
       if (showbutton.innerHTML !== "Réduire") {
           showbutton.innerHTML = "Réduire";
       } else {
-          showbuttona.innerHTML = "Plus d'infos";
+          showbutton.innerHTML = "Plus d'infos";
       }
 }
