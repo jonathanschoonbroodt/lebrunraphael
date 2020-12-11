@@ -2,13 +2,19 @@
     padding: 0 2em;
 
     &.-team {
-        .teammember-container + .teammember-container::before {
-            height: 1px;
-            width: 100%;
-            background-color: @blue;
-            content: " ";
-            margin-top: 1em;
-            margin-bottom: 2em;
+        .teammember-container {
+            + .teammember-container::before {
+                height: 1px;
+                width: 100%;
+                background-color: @blue;
+                content: " ";
+                margin-top: 2em;
+                margin-bottom: 2em;
+            }
+
+            a {
+                width: fit-content;
+            }
         }
     }
 
@@ -19,7 +25,8 @@
     }
 
     &.-contact,
-    &.-feesandlegalinformations {
+    &.-feesandlegalinformations,
+    &.-team {
         padding-top: 10em;
     }
 

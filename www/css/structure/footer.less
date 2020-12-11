@@ -11,8 +11,8 @@
         margin-bottom: .5em;
 
         ul {
+            margin-top: .5em;
             margin-left: .5em;
-            font-size: @font-xs;
 
             > li {
                 margin-bottom: .25em;
@@ -38,7 +38,8 @@
                 margin-bottom: 0; // overide default margin-bottom from p
             }
 
-            .infos-container, .madewithlove {
+            .infos-container,
+            .madewithlove {
                 font-size: @font-xs;
                 @media (max-width: @s) {
                     font-size: 2vw;
@@ -47,7 +48,7 @@
         }
 
         &-wrapper {
-            padding: 2em 2em 0em 2em;
+            padding: 2em 2em 0;
             max-width: @l;
         }
     }

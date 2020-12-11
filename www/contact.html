@@ -17,6 +17,9 @@
 
     <body>
         <header>
+            <nav class="tothetop _color -bgblue _flex -center -h -v">
+                <a class="_color -white" href="#" title="Retourner en haut de la page">&uarr;</a>
+            </nav>
             <nav class="navbar" id="menu">
                 <div class="navbar-container _flex -spacebetween  _margin -auto">
                     <h2 class="_hide -always">Menu de navigation</h2>
@@ -29,17 +32,20 @@
                         </li>
                         <li class="navbar-listelement">
                             <div class="dropdown-container">
-                                <span class="dropdownbutton" title="Afficher les services">Services ▾</span>
+                                <span class="dropdownbutton _color -darkgray" title="Afficher les services">Services ▾</span>
                                 <div class="dropdown-content">
-                                    <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux pros</a>
-                                    <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
-                                    <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                    <span class="_text -italic _color -darkgray">Services pros</span>
+                                    <a class="link -black -sub" href="mainservices.html" title="Afficher la page Services généraux">Services généraux</a>
+                                    <a class="link -black -sub" href="debtservices.html" title="Afficher la page Services récupération de créance">Récupération de créance</a>
+                                    <span class="_text -italic _color -darkgray">Autres services</span>
+                                    <a class="link -black -sub" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                    <a class="link -black -sub" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
                                 </div>
                             </div>
                         </li>
                         <li class="navbar-listelement">
                             <div class="dropdown-container">
-                                <span class="dropdownbutton" title="Afficher les tarifs et infos légales">Tarifs et infos légales ▾</span>
+                                <span class="dropdownbutton _color -darkgray" title="Afficher les tarifs et infos légales">Tarifs et infos légales ▾</span>
                                 <div class="dropdown-content">
                                     <a class="link -black" href="fees.html" title="Afficher la page Tarifs">Tarifs</a>
                                     <a class="link -black" href="legalinformations.html" title="Afficher la page Informations légales">Informations légales</a>
@@ -65,22 +71,29 @@
                         <li class="smnavbar-listelement">
                             <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
                         </li>
-                        <li class="smnavbar-listelement">
-                            <span class="looklikelink">Services</span>
+                        <li class="smnavbar-listelement _flex -column">
+                            <span class="looklikelink _color -darkgray">Services</span>
                             <ul>
-                                <li>
-                                    <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
-                                </li>
-                                <li>
-                                    <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
-                                </li>
-                                <li class="smnavbar-listelement">
-                                    <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
-                                </li>
+                                <span class="looklikelink _text -italic _color -darkgray">Services pros</span>
+                                <ul>
+                                    <li class="_flex -column">
+                                        <a class="link -black -sub" href="mainservices.html" title="Afficher la page Services généraux">Services généraux</a>
+                                        <a class="link -black -sub" href="debtservices.html" title="Afficher la page Services récupération de créance">Récupération de créance</a>
+                                    </li>
+                                </ul>
+                                <span class="looklikelink _text -italic _color -darkgray">Autres services</span>
+                                <ul>
+                                    <li>
+                                        <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                    </li>
+                                    <li class="smnavbar-listelement">
+                                        <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                    </li>
+                                </ul>
                             </ul>
                         </li>
                         <li class="smnavbar-listelement">
-                            <span class="looklikelink">Tarifs et informations légales</span>
+                            <span class="looklikelink _color -darkgray">Tarifs et informations légales</span>
                             <ul>
                                 <li>
                                     <a class="link -black" href="fees.html" title="Afficher la page Tarifs">Tarifs</a>
@@ -105,19 +118,18 @@
                 <h1 class="title _text -left">Contact <span class="_hide -always">de notre avocat</span></h1>
                 <address>
                     <ul class="_flex -column">
-                        <li><img class="icon" src="img/icons/company.svg" alt="Icône société"> SRL LEBRUN Raphaël – Bureau d’avocats</li>
+                        <li><img class="icon" src="img/icons/company.svg" alt="Icône société"> SRL LEBRUN Raphaël</li>
                         <li><img class="icon" src="img/icons/map.svg" alt="Icône adresse"> Adresse du cabinet : Thier, 2 à 4890 CLERMONT</li>
                         <li><img class="icon" src="img/icons/mobilephone.svg" alt="Icône téléphone portable"> GSM : <a class="link -blue" href="tel:+0499299860" title="Appeler Maître Raphaël Lebrun sur son GSM">+0499299860</a></li>
                         <li><img class="icon" src="img/icons/phone.svg" alt="Icône téléphone fixe"> Tél. : <a class="link -blue" href="tel:+3287686269" title="Appeler le secrétariat de Maître Raphaël Lebrun">+3287686269</a></li>
                         <li><img class="icon" src="img/icons/email.svg" alt="Icône email"> Email : <a class="link -blue" href="mailto:r.lebrun@avocat.be" title="Envoyer un email à Maître Raphaël Lebrun"> r.lebrun@avocat.be</a></li>
-                        <li><img class="icon" src="img/icons/paiement.svg" alt="Icône paiement"> Compte tiers : BE92 0682 4083 1223</li>
-                        <li><img class="icon" src="img/icons/paiement.svg" alt="Icône paiement"> Compte honoraires : BE40 0688 9219 0263</li>
+                        <li><img class="icon" src="img/icons/paiement.svg" alt="Icône paiement"> Compte tiers : BE92 0682 4083 1223 | Compte honoraires : BE40 0688 9219 0263</li>
                         <iframe class="googlemap" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=thier%202%204890%20clermont%20belgique+(Lebrun%20Raph%C3%A4el%20SRL)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </ul>
                 </address>
             </section>
         </main>
-        <footer class="footer _color -bggray">
+        <footer class="footer _color -bglightpurple">
             <div class="footer-wrapper _margin -auto">
                 <h2 class="_hide -always">Pied de page</h2>
                 <div class="footer-container _flex -wrap -spacebetween _margin -auto">
@@ -135,21 +147,36 @@
                                     <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
                                 </li>
                                 <li class="footer-listelement">
-                                    <span>Services</span>
+                                    <span class="looklikelink _color -darkgray">Services</span>
                                     <ul>
-                                        <li>
-                                            <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
-                                        </li>
-                                        <li>
-                                            <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
-                                        </li>
-                                        <li>
-                                            <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
-                                        </li>
+                                        <span class="looklikelink _text -italic _color -darkgray">Services pros</span>
+                                        <ul>
+                                            <li class="_flex -column">
+                                                <a class="link -black -sub" href="mainservices.html" title="Afficher la page Services généraux">Services généraux</a>
+                                                <a class="link -black -sub" href="debtservices.html" title="Afficher la page Services récupération de créance">Récupération de créance</a>
+                                            </li>
+                                        </ul>
+                                        <span class="looklikelink _text -italic _color -darkgray">Autres services</span>
+                                        <ul>
+                                            <li>
+                                                <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                            </li>
+                                            <li class="smnavbar-listelement">
+                                                <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                            </li>
+                                        </ul>
                                     </ul>
                                 </li>
                                 <li class="footer-listelement">
-                                    <a class="link -black" href="feesandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
+                                    <span class="looklikelink _color -darkgray">Tarifs et informations légales</span>
+                                    <ul>
+                                        <li>
+                                            <a class="link -black" href="fees.html" title="Afficher la page Tarifs">Tarifs</a>
+                                        </li>
+                                        <li>
+                                            <a class="link -black" href="legalinformations.html" title="Afficher la page Informations légales">Informations légales</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="footer-listelement">
                                     <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
@@ -166,7 +193,7 @@
                 <div class="copyright-wrapper _flex -spacebetween _margin -auto">
                     <div class="infos-container _flex -center -v">
                         <p>
-                            Lebrun Raphaël SRL &copy; - TVA 0833.868.418 - <a class="link -white" title="Afficher les crédits" href="credits.html" target="_blank">Crédits</a>
+                            Lebrun Raphaël SRL &copy; - TVA 0833.868.418 - <a class="link -white -underlined" title="Afficher les crédits" href="credits.html" target="_blank">Crédits</a>
                         </p>
                     </div>
                     <div class="socials-container _flex -center -h -v">
@@ -180,7 +207,7 @@
                     </div>
                 </div>
                 <p class="madewithlove _text -center">
-                    Website made with ❤️ by <a class="link -white" title="Accéder au site web de JS Digital" href="#" target="_blank">JS Digital</a>
+                    Website made with ❤️ by <a class="link -white -underlined" title="Accéder au site web de JS Digital" href="#" target="_blank">JS Digital</a>
                 </p>
             </div>
         </footer>

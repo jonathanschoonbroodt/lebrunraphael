@@ -11,6 +11,17 @@
     margin: auto;
     background: linear-gradient(to bottom, @white, @whitetransparent, @transparent);
 
+    &-container {
+        span {
+            margin-top: .5em;
+            margin-bottom: .5em;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
     &-brand {
         .logo {
             width: 50px;
@@ -99,7 +110,8 @@
                     }
                 }
 
-                .looklikelink, .link {
+                .link,
+                .looklikelink {
                     line-height: 1.5em;
                     font-size: 1.5em;
                     font-weight: bold;
