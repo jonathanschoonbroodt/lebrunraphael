@@ -531,6 +531,14 @@ p {
 .main-container {
   padding: 0 2em;
 }
+.main-container.-team .teammember-container + .teammember-container::before {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(206, 73%, 42%);
+  content: " ";
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
 .main-container.-contact .icon {
   margin-right: 0.5em;
 }

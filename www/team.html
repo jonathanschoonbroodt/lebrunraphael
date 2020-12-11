@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <title>Lebrun Raphaël SRL | L'équipe</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="description" content="Découvrez l'équipe de notre bureau d'avocat.">
+        <meta name="keywords" content="equipe, avocat, bureau">
+        <meta name="author" content="Lebrun Raphaël SRL">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-xscale=1.0, minimum-xscale=1.0, maximum-xscale=1.0">
+        <link rel="shortcut icon" href="img/favicon.png">
+        <script src="js/functions.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar" id="menu">
+                <div class="navbar-container _flex -spacebetween  _margin -auto">
+                    <h2 class="_hide -always">Menu de navigation</h2>
+                    <h1 class="navbar-brand _flex -start">
+                        <img class="logo" src="img/logo.svg" alt="Logo de Lebrun Raphaël">
+                    </h1>
+                    <ul class="navbar-list _flex -end">
+                        <li class="navbar-listelement">
+                            <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
+                        </li>
+                        <li class="navbar-listelement">
+                            <div class="dropdown-container">
+                                <span class="dropdownbutton" title="Afficher les services">Services ▾</span>
+                                <div class="dropdown-content">
+                                    <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux pros</a>
+                                    <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                    <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-listelement">
+                            <div class="dropdown-container">
+                                <span class="dropdownbutton" title="Afficher les tarifs et infos légales">Tarifs et infos légales ▾</span>
+                                <div class="dropdown-content">
+                                    <a class="link -black" href="fees.html" title="Afficher la page Tarifs">Tarifs</a>
+                                    <a class="link -black" href="legalinformations.html" title="Afficher la page Informations légales">Informations légales</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-listelement">
+                            <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
+                        </li>
+                        <li class="navbar-listelement">
+                            <a class="link -black -looklikebutton" href="contact.html" title="Afficher la page Contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-burger">
+                        <a href="#" class="burgerbutton-container">
+                            <img class="burgerbutton -opennavbar" src="img/icons/burgeropen.svg" alt="Icône d'ouverture du menu" title="Ouvrir le menu" onclick="openMenu()">
+                            <img class="burgerbutton -closenavbar" src="img/icons/burgerclose.svg" alt="Icône de fermeture du menu" title="Fermer le menu" onclick="closeMenu()">
+                        </a>
+                    </div>
+                </div>
+                <div class="smnavbar-container">
+                    <ul class="smnavbar-list">
+                        <li class="smnavbar-listelement">
+                            <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
+                        </li>
+                        <li class="smnavbar-listelement">
+                            <span class="looklikelink">Services</span>
+                            <ul>
+                                <li>
+                                    <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
+                                </li>
+                                <li>
+                                    <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                </li>
+                                <li class="smnavbar-listelement">
+                                    <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="smnavbar-listelement">
+                            <span class="looklikelink">Tarifs et informations légales</span>
+                            <ul>
+                                <li>
+                                    <a class="link -black" href="fees.html" title="Afficher la page Tarifs">Tarifs</a>
+                                </li>
+                                <li>
+                                    <a class="link -black" href="legalinformations.html" title="Afficher la page Informations légales">Informations légales</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="smnavbar-listelement">
+                            <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
+                        </li>
+                        <li class="smnavbar-listelement">
+                            <a class="link -black" href="contact.html" title="Afficher la page Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main-container -team">
+            <section class="section-container _flex -column -center -h _text -justify">
+                <h1 class="title _text -left">
+                    L'équipe <span class="_hide -always">de notre avocat</span>
+                </h1>
+                <div class="teammember-container _flex -column">
+                    <h2 class="title">
+                        Raphaël Lebrun
+                    </h2>
+                    <h3 class="subtitle _color -blue">
+                        Avocat
+                    </h3>
+                    <p>
+                        J’ai étudié au collège Saint-Servais de Liège puis à l’Université de Liège.
+                    </p>
+                    <p>
+                        Après mes études, j’entame mon stage d’avocat tout en devenant assistant à l’Université pour Mme Lecocq, chargée de cours en Droit des biens.
+                        Durant ma deuxième année de stage, j'effectue avec réussite une formation d’expert immobilier.
+                    </p>
+                    <p>
+                        Je travaille par après durant 6 ans au cabinet d’avocats Dumoulin de Verviers, bureau généraliste pratiquant de manière préférentielle les droits de la responsabilité et de l’assurance. S'ensuit une brève expérience de
+                        quelques mois à Herve.
+                    </p>
+                    <p>
+                        J'ouvre ensuite mon propre bureau d'avocat au centre de Thimister en août 2011.
+                    </p>
+                    <p>
+                        De 2010 à 2014 je participe en parallèle à l'activité de la société FOREXIM, société spécialisée en formations dans le domaine immobilier. J’y dispensais des formations aux professionnels du secteur immobilier dans le
+                        domaine juridiquement (évidemment) mais axées essentiellement sur la pratique car mon auditoire n’était pas composé de juriste mais d’autres professionnels ayant un besoin de formation en matière juridique. Les formations
+                        étaient donc adaptées à ce public et axées sur la pratique.
+                    </p>
+                    <a href="#" title="Afficher le profil Linkedin de Maître Raphaël Lebrun" target="_blank">
+                        <img class="icon" src="img/icons/linkedin.svg" alt="Icône Linkedin">
+                    </a>
+                </div>
+                <div class="teammember-container _flex -column">
+                    <h2 class="title">
+                        Emmanuelle Cadeau
+                    </h2>
+                    <h3 class="subtitle _color -blue">
+                        Secrétaire juridique
+                    </h3>
+                    <p>
+                        Depuis fin 2007, Emmanuelle gère de manière autonome le quotidien du bureau.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer _color -bggray">
+            <div class="footer-wrapper _margin -auto">
+                <h2 class="_hide -always">Pied de page</h2>
+                <div class="footer-container _flex -wrap -spacebetween _margin -auto">
+                    <div class="col-container -about">
+                        <h2>A propos</h2>
+                        <p class="about">
+                            Lebrun Raphaël SRL est un bureau d'avocat en droit immobilier actif depuis 2011 et situé à Clermont en Belgique.
+                        </p>
+                    </div>
+                    <div class="col-container">
+                        <h2>Plan du Site</h2>
+                        <nav>
+                            <ul class="footer-list">
+                                <li class="footer-listelement">
+                                    <a class="link -black" href="index.html" title="Afficher la page Présentation">Présentation</a>
+                                </li>
+                                <li class="footer-listelement">
+                                    <span>Services</span>
+                                    <ul>
+                                        <li>
+                                            <a class="link -black" href="contracts.html" title="Afficher la page Modèles de contrats">Modèles de contrats</a>
+                                        </li>
+                                        <li>
+                                            <a class="link -black" href="services.html" title="Afficher la page Services aux professionnels">Services aux professionnels</a>
+                                        </li>
+                                        <li>
+                                            <a class="link -black" href="copropertyandstatus.html" title="Afficher la page Coproprieté & adaptation de statuts">Coproprieté & adaptation de statuts</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer-listelement">
+                                    <a class="link -black" href="feesandlegalinformations.html" title="Afficher la page Tarifs & infos légales">Tarifs & infos légales</a>
+                                </li>
+                                <li class="footer-listelement">
+                                    <a class="link -black" href="team.html" title="Afficher la page Mon équipe">Mon équipe</a>
+                                </li>
+                                <li class="footer-listelement">
+                                    <a class="link -black" href="contact.html" title="Afficher la page Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-container _color -bgblack -white">
+                <div class="copyright-wrapper _flex -spacebetween _margin -auto">
+                    <div class="infos-container _flex -center -v">
+                        <p>
+                            Lebrun Raphaël SRL &copy; - TVA 0833.868.418 - <a class="link -white" title="Afficher les crédits" href="credits.html" target="_blank">Crédits</a>
+                        </p>
+                    </div>
+                    <div class="socials-container _flex -center -h -v">
+                        <div class="icons-container _flex">
+                            <div class="icon-container">
+                                <a href="https://facebook.com/SprlLebrunRaphael/" title="Accéder à la page Facebook de Lebrun Raphaël SRL">
+                                    <img class="icon -m" src="img/icons//facebook.svg" alt="Icône Facebook">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="madewithlove _text -center">
+                    Website made with ❤️ by <a class="link -white" title="Accéder au site web de JS Digital" href="#" target="_blank">JS Digital</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+    <script>
+        // outdated browser
+        var $buoop = {
+            required: {
+                e: -4,
+                f: -3,
+                o: -3,
+                s: -1,
+                c: -3
+            },
+            insecure: true,
+            api: 2020.12
+        };
+
+        function $buo_f() {
+            var e = document.createElement("script");
+            e.src = "//browser-update.org/update.min.js";
+            document.body.appendChild(e);
+        };
+        try {
+            document.addEventListener("DOMContentLoaded", $buo_f, false)
+        } catch (e) {
+            window.attachEvent("onload", $buo_f)
+        }
+    </script>
+
+</html>
