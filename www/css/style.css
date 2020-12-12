@@ -246,6 +246,9 @@ ul > li {
   border: 1px solid;
   border-radius: 18px;
 }
+.button:hover {
+  cursor: pointer;
+}
 .button.-blue {
   color: hsl(206, 73%, 42%);
   border-color: hsl(206, 73%, 42%);
