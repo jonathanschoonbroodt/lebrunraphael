@@ -563,6 +563,10 @@ ul > li {
 }
 .main-container {
   padding: 0 2em;
+  padding-top: 10%;
+}
+.main-container.-index {
+  padding-top: 0;
 }
 .main-container.-services ul {
   list-style-type: square;
@@ -594,12 +598,6 @@ ul > li {
 }
 .main-container.-contact .icon {
   margin-right: 0.5em;
-}
-.main-container.-contact,
-.main-container.-feesandlegalinformations,
-.main-container.-services,
-.main-container.-team {
-  padding-top: 10em;
 }
 .main-container.-feesandlegalinformations ul {
   list-style-type: square;
