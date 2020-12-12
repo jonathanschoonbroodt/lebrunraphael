@@ -15,7 +15,7 @@ hr {
 }
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 a {
   background-color: transparent;
@@ -33,7 +33,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 0.75em;
 }
 small {
   font-size: 80%;
@@ -173,22 +173,22 @@ h6 {
   font-weight: 700;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 h3 {
-  font-size: calc(2em - 5px);
+  font-size: calc(1.75em - 0.5em);
 }
 h4 {
-  font-size: calc(2em - 7.5px);
+  font-size: calc(1.75em - 0.75em);
 }
 h5 {
-  font-size: calc(2em - 10px);
+  font-size: calc(1.75em - 1em);
 }
 h6 {
-  font-size: calc(2em - 12.5px);
+  font-size: calc(1.75em - 1.25em);
 }
 ul {
   list-style: none;
@@ -330,6 +330,12 @@ ul > li {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
+@media (max-width: 320px) {
+  .subtitle,
+  .title {
+    word-wrap: break-word;
+  }
+}
 .card-container {
   max-width: 33.33%;
   width: 100%;
@@ -409,7 +415,7 @@ ul > li {
   transition-duration: 2s;
 }
 .tothetop > a {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 .footer-wrapper {
   max-width: 1024px;
@@ -437,7 +443,7 @@ ul > li {
 }
 .footer .copyright-container .infos-container,
 .footer .copyright-container .madewithlove {
-  font-size: 0.75em;
+  font-size: 0.5em;
 }
 @media (max-width: 640px) {
   .footer .copyright-container .infos-container,
