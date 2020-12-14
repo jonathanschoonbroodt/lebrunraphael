@@ -263,7 +263,7 @@ ul > li {
 }
 .button.-black:hover {
   color: hsl(0, 0%, 100%);
-  border-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 0%);
   background-color: hsl(0, 0%, 0%);
 }
 .googlemap {
