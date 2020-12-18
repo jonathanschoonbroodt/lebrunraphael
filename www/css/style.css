@@ -433,45 +433,45 @@ ul > li {
 .tothetop > a {
   font-size: 1.75em;
 }
+.copyright-container .madewithlove {
+  margin-bottom: 0;
+}
+.copyright-container .infos-container,
+.copyright-container .madewithlove {
+  font-size: 0.5em;
+}
+@media (max-width: 640px) {
+  .copyright-container .infos-container,
+  .copyright-container .madewithlove {
+    font-size: 2vw;
+  }
+}
+.copyright-wrapper {
+  padding: 2em 2em 0;
+  max-width: 1024px;
+}
 .footer-wrapper {
   max-width: 1024px;
 }
 .footer-subcontainer {
   margin-bottom: 1em;
 }
+.footer-subcontainer .col-container {
+  padding: 1em;
+}
+.footer-subcontainer .col-container .about {
+  max-width: 640px;
+}
+.footer-subcontainer .col-container .logo {
+  width: 50px;
+}
+.footer-subcontainer .col-container ul {
+  margin-left: 0;
+}
 .footer-listelement {
   margin-bottom: 0.5em;
 }
-.footer .col-container {
-  padding: 1em;
-}
-.footer .col-container .about {
-  max-width: 640px;
-}
-.footer .col-container .logo {
-  width: 50px;
-}
-.footer .col-container ul {
-  margin-left: 0;
-}
-.footer .copyright-container .madewithlove {
-  margin-bottom: 0;
-}
-.footer .copyright-container .infos-container,
-.footer .copyright-container .madewithlove {
-  font-size: 0.5em;
-}
-@media (max-width: 640px) {
-  .footer .copyright-container .infos-container,
-  .footer .copyright-container .madewithlove {
-    font-size: 2vw;
-  }
-}
-.footer .copyright-wrapper {
-  padding: 2em 2em 0;
-  max-width: 1024px;
-}
-.navbar {
+.navbar-container {
   font-weight: 700;
   padding: 2em 4.5%;
   position: fixed;
@@ -482,11 +482,54 @@ ul > li {
   margin: auto;
   background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsla(0, 0%, 100%, 0.75), transparent);
 }
-.navbar-container span {
+.navbar-container .smnavbar-container {
+  display: none;
+}
+@media (max-width: 960px) {
+  .navbar-container.-opensmmenu {
+    position: fixed;
+    z-index: 999;
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(0, 0%, 100%);
+  }
+  .navbar-container.-opensmmenu .navbar-brand {
+    width: 100%;
+  }
+  .navbar-container.-opensmmenu .navbar-brand .logo {
+    display: flex;
+  }
+  .navbar-container.-opensmmenu .navbar-list {
+    display: none;
+  }
+  .navbar-container.-opensmmenu .navbar-burger .burgerbutton.-closenavbar {
+    display: flex;
+  }
+  .navbar-container.-opensmmenu .navbar-burger .burgerbutton.-opennavbar {
+    display: none;
+  }
+  .navbar-container.-opensmmenu .smnavbar-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar-container.-opensmmenu .smnavbar-container .smnavbar-listelement ul {
+    margin-left: 1em;
+  }
+  .navbar-container.-opensmmenu .smnavbar-container .link,
+  .navbar-container.-opensmmenu .smnavbar-container .looklikelink {
+    line-height: 1.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+.navbar-subcontainer span {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-.navbar-container span:first-child {
+.navbar-subcontainer span:first-child {
   margin-top: 0;
 }
 .navbar-brand .logo {
@@ -518,49 +561,6 @@ ul > li {
 }
 .navbar-burger .burgerbutton.-closenavbar {
   display: none;
-}
-.navbar .smnavbar-container {
-  display: none;
-}
-@media (max-width: 960px) {
-  .navbar.-opensmmenu {
-    position: fixed;
-    z-index: 999;
-    overflow: scroll;
-    width: 100vw;
-    height: 100vh;
-    background: hsl(0, 0%, 100%);
-  }
-  .navbar.-opensmmenu .navbar-brand {
-    width: 100%;
-  }
-  .navbar.-opensmmenu .navbar-brand .logo {
-    display: flex;
-  }
-  .navbar.-opensmmenu .navbar-list {
-    display: none;
-  }
-  .navbar.-opensmmenu .navbar-burger .burgerbutton.-closenavbar {
-    display: flex;
-  }
-  .navbar.-opensmmenu .navbar-burger .burgerbutton.-opennavbar {
-    display: none;
-  }
-  .navbar.-opensmmenu .smnavbar-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 100%;
-  }
-  .navbar.-opensmmenu .smnavbar-container .smnavbar-listelement ul {
-    margin-left: 1em;
-  }
-  .navbar.-opensmmenu .smnavbar-container .link,
-  .navbar.-opensmmenu .smnavbar-container .looklikelink {
-    line-height: 1.5em;
-    font-size: 1.5em;
-    font-weight: bold;
-  }
 }
 .tips-container {
   padding: 5%;

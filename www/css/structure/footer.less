@@ -5,46 +5,25 @@
 
     &-subcontainer {
         margin-bottom: 1em;
+
+        .col-container {
+            padding: 1em;
+
+            .about {
+                max-width: @s;
+            }
+
+            .logo {
+                width: 50px;
+            }
+
+            ul {
+                margin-left: 0; // overide default value defined into selecteurs
+            }
+        }
     }
 
     &-listelement {
         margin-bottom: .5em;
-    }
-
-    .col-container {
-        padding: 1em;
-
-        .about {
-            max-width: @s;
-        }
-
-        .logo {
-            width: 50px;
-        }
-
-        ul {
-            margin-left: 0; // overide default value defined into selecteurs
-        }
-    }
-
-    .copyright {
-        &-container {
-            .madewithlove {
-                margin-bottom: 0; // overide default margin-bottom from p
-            }
-
-            .infos-container,
-            .madewithlove {
-                font-size: @font-xs;
-                @media (max-width: @s) {
-                    font-size: 2vw;
-                }
-            }
-        }
-
-        &-wrapper {
-            padding: 2em 2em 0;
-            max-width: @l;
-        }
     }
 }

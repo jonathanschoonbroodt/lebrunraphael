@@ -1,17 +1,80 @@
 // navbars
 
 .navbar {
-    font-weight: 700;
-    padding: 2em 4.5%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    max-width: 1980px;
-    margin: auto;
-    background: linear-gradient(to bottom, @white, @whitetransparent, @transparent);
-
     &-container {
+        font-weight: 700;
+        padding: 2em 4.5%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        max-width: 1980px;
+        margin: auto;
+        background: linear-gradient(to bottom, @white, @whitetransparent, @transparent);
+
+        .smnavbar-container {
+            display: none;
+        }
+
+        &.-opensmmenu {
+            @media (max-width: @m) {
+                position: fixed;
+                z-index: 999;
+                overflow: scroll;
+                width: 100vw;
+                height: 100vh;
+                background: @white;
+
+                .navbar {
+                    &-brand {
+                        width: 100%;
+
+                        .logo {
+                            display: flex;
+                        }
+                    }
+
+                    &-list {
+                        display: none;
+                    }
+
+                    &-burger {
+                        .burgerbutton {
+                            &.-closenavbar {
+                                display: flex;
+                            }
+
+                            &.-opennavbar {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .smnavbar-container {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    width: 100%;
+
+                    .smnavbar-listelement {
+                        ul {
+                            margin-left: 1em;
+                        }
+                    }
+
+                    .link,
+                    .looklikelink {
+                        line-height: 1.5em;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    &-subcontainer {
         span {
             margin-top: .5em;
             margin-bottom: .5em;
@@ -55,67 +118,6 @@
         .burgerbutton {
             &.-closenavbar {
                 display: none;
-            }
-        }
-    }
-
-    .smnavbar-container {
-        display: none;
-    }
-
-    &.-opensmmenu {
-        @media (max-width: @m) {
-            position: fixed;
-            z-index: 999;
-            overflow: scroll;
-            width: 100vw;
-            height: 100vh;
-            background: @white;
-
-            .navbar {
-                &-brand {
-                    width: 100%;
-
-                    .logo {
-                        display: flex;
-                    }
-                }
-
-                &-list {
-                    display: none;
-                }
-
-                &-burger {
-                    .burgerbutton {
-                        &.-closenavbar {
-                            display: flex;
-                        }
-
-                        &.-opennavbar {
-                            display: none;
-                        }
-                    }
-                }
-            }
-
-            .smnavbar-container {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                width: 100%;
-
-                .smnavbar-listelement {
-                    ul {
-                        margin-left: 1em;
-                    }
-                }
-
-                .link,
-                .looklikelink {
-                    line-height: 1.5em;
-                    font-size: 1.5em;
-                    font-weight: bold;
-                }
             }
         }
     }
