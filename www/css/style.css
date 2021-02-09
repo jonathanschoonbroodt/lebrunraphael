@@ -381,6 +381,9 @@ ul > li {
   min-width: max-content;
   z-index: 1;
 }
+.dropdown-content > .link {
+  margin-left: 0.5em;
+}
 .dropdown-content .link + .link {
   margin-top: 0.5em;
 }
